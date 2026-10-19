@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+     <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c7b2e6c21c.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-[#020712]">
+    <div class="flex justify-center p-4 mb-[10rem]">
+        <div class="pt-[4rem] flex flex-col gap-5">
+            <h1 class="text-yellow-500 text-[2rem] font-bold ">ROCK, PAPER SCISSORS GAME</h1>
+            <p class="flex items-center text-center text-yellow-500 text-[2xl] font-sm ">Pick A Choice......</p>
+        </div>
+    </div>
+
+    <div class="flex justify-center gap-10 ">
+        <button id="rock" class="hover:shadow-md shadow-white">
+            <div class=" w-[200px] flex flex-col items-center justify-center border-1 border-yellow-500 py-15 text-[2rem] ">
+                <p class="text-yellow-500 font-semibold">Rock</p>
+                <i class="fa-solid fa-diamond text-yellow-500"></i>
+            </div>
+        </button>
+
+
+        <button id="paper" class="hover:shadow-md shadow-white">
+            <div class=" w-[200px] flex flex-col items-center justify-center border-1 border-yellow-500 py-15 text-[2rem] ">
+                <p class="text-yellow-500 font-semibold">Paper</p>
+                <i class="fa-regular fa-note-sticky text-yellow-500"></i>
+            </div>
+        </button>
+
+
+        <button id="Scissors" class="hover:shadow-md shadow-white">
+            <div class=" w-[200px] flex flex-col items-center justify-center border-1 border-yellow-500 py-15 text-[2rem]">
+                <p class="text-yellow-500 font-semibold">Scissors</p>
+                <i class="fa-solid fa-hand-scissors text-yellow-500"></i>
+            </div>
+        </button>
+        
+        
+    </div>
+
+    <div class="pt-10 flex items-center justify-center pb-30">
+        <h2 class="text-yellow-500 text-[2rem]">
+            Score:
+        </h2>
+        <h2 id="value" class="text-yellow-500 text-[2rem]">
+            0
+        </h2>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
